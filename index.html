@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio viaggio a Londra</title>
 </head>
+<!-- controlla errori in fondo al codice -->
 <body>
     <header>
         <h1>Il mio viaggio a Londra</h1>
@@ -16,7 +17,7 @@
     </header>
 
     <main>
-        <section>
+        <section> <!--sezione 1-->
             <h2>Le mie spese</h2>
             <table>
                 <thead>
@@ -40,6 +41,7 @@
                         <td>Biglietto aereo</td>
                         <td>120€</td>
                     </tr>
+                    <!-- cambiare il tr successivo e metterno nel tfoot (da creare) -->
                     <tr>
                         <td colspan="2">Totale</td>
                         <td>360€</td>
@@ -48,8 +50,9 @@
             </table>
             <hr>
         </section>
-        <section>
+        <section> <!--sezione 2-->
             <h3>Cose da fare</h3>
+            <!-- Character reference was not terminated by a semicolon - errore da controllare righe 55->58 -->
             <ul>
                 <li>Visitare la Tower of London &#10007</li>
                 <li>Visitare Greenwich &#10003</li>
@@ -58,29 +61,32 @@
             </ul>
             <hr>
         </section>
-        <section>
-            <h3>Info utili:</h3>
+        <section> <!--sezione 3-->
+            <h3>Info utili:</h3> 
             <ol>
-                <li>Numeri utili di emergenza</li>
-                <ul>
-                    <li><strong>999</strong> - Emergenza</li>
-                    <li><strong>101</strong> - Numero Polizia</li>
-                    <li><strong>111</strong> - Numero assistenza medica</li>
-                </ul>
-                <li>Hotel</li>
-                <ul>
-                    <li><strong>Nome Hotel:</strong> Buckingham Palace</li>
-                    <li><strong>Indirizzo Hotel:</strong> Westminister, London</li>
-                </ul>
-                <li>Aereo</li>
-                <ul>
-                    <li><strong>Volo di andata:</strong> Yj456UY, ore 9:30 Milano Malpensa</li>
-                    <li><strong>Volo di ritorno:</strong> YU859PL, ore 10:30 London Heathrow</li>
-                </ul>    
+                <li>Numeri utili di emergenza
+                    <ul>
+                        <li><strong>999</strong> - Emergenza</li>
+                        <li><strong>101</strong> - Numero Polizia</li>
+                        <li><strong>111</strong> - Numero assistenza medica</li>
+                    </ul>
+                </li>
+                <li>Hotel
+                    <ul>
+                        <li><strong>Nome Hotel:</strong> Buckingham Palace</li>
+                        <li><strong>Indirizzo Hotel:</strong> Westminister, London</li>
+                    </ul>
+                </li>
+                <li>Aereo
+                    <ul>
+                        <li><strong>Volo di andata:</strong> Yj456UY, ore 9:30 Milano Malpensa</li>
+                        <li><strong>Volo di ritorno:</strong> YU859PL, ore 10:30 London Heathrow</li>
+                    </ul>
+                </li>                    
             </ol>
             <hr>
         </section>
-        <section>
+        <section> <!--sezione 4-->
             <h3>Le foto</h3>
             <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="Londra4">
             <img src="https://imgc.allpostersimages.com/img/posters/evening-tower-bridge-and-river-thames-london_u-L-P2QVZJ0.jpg?artPerspective=n" alt="Londra5">
@@ -88,3 +94,21 @@
     </main>
 </body>
 </html>
+
+<!-- Error: th start tag in table body.
+
+From line 22, column 24; to line 23, column 24
+
+   <thead>↩                    <th>Numero
+
+Error: Row 5 of a row group established by a tbody element has no cells beginning on it.
+
+From line 47, column 25; to line 48, column 24
+
+      <tr>↩                </tbody>↩     
+
+Warning: A table row was 0 columns wide, which is less than the column count established by the first row (3).
+
+From line 47, column 25; to line 48, column 24
+
+      <tr>↩                </tbody>↩      -->
