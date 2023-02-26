@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio viaggio a Londra</title>
 </head>
-<!-- controlla errori in fondo al codice -->
+
 <body>
     <header>
         <h1>Il mio viaggio a Londra</h1>
@@ -17,10 +17,10 @@
     </header>
 
     <main>
-        <section> <!--sezione 1-->
+        <section> <!--sezione 1 -ERROR- -->
             <h2>Le mie spese</h2>
             <table>
-                <thead>
+                <thead>                               <!--th start tag in table body. line 22-->
                     <th>Numero</th>
                     <th>Descrizione</th>
                     <th>Costo</th>
@@ -51,7 +51,7 @@
             </table>
             <hr>
         </section>
-        <section> <!--sezione 2-->
+        <section> <!--sezione 2 -ERROR- -->
             <h3>Cose da fare</h3>
             <!-- Character reference was not terminated by a semicolon -->
             <ul>
@@ -93,23 +93,6 @@
             <img src="https://imgc.allpostersimages.com/img/posters/evening-tower-bridge-and-river-thames-london_u-L-P2QVZJ0.jpg?artPerspective=n" alt="Londra5">
         </section>
     </main>
+
 </body>
 </html>
-
-<!-- Error: th start tag in table body.
-
-From line 22, column 24; to line 23, column 24
-
-   <thead>↩                    <th>Numero
-
-Error: Row 5 of a row group established by a tbody element has no cells beginning on it.
-
-From line 47, column 25; to line 48, column 24
-
-      <tr>↩                </tbody>↩     
-
-Warning: A table row was 0 columns wide, which is less than the column count established by the first row (3).
-
-From line 47, column 25; to line 48, column 24
-
-      <tr>↩                </tbody>↩      -->
